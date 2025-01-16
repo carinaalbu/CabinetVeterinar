@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CabinetVeterinar.ProgramariDetailPage"
+             Title="Detalii programari">
+    <StackLayout Margin="20">
+        <Entry Placeholder="Nume animal"
+               Text="{Binding PetName}" />
+        <Entry Placeholder="Nume proprietar"
+               Text="{Binding OwnerName}" />
+        <DatePicker Date="{Binding AppointmentDate}" />
+        <Button Text="Salvează" Clicked="OnSaveClicked" />
+        <Button Text="Șterge" Clicked="OnDeleteClicked" />
+    </StackLayout>
+</ContentPage>
